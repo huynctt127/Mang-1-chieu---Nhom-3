@@ -1,0 +1,10 @@
+void M1C::xoak(int k) {
+    if (k<0||k>=spt) {
+        cout<<"Vi tri xoa khong hop le";
+        return;
+    }
+    for (inti=k; i<spt-1; i++) {
+        a[i]=a[i+1];
+    }
+    spt--;
+}
