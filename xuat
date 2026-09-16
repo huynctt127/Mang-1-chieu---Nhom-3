@@ -1,0 +1,6 @@
+void M1C::xuat() {
+  cout << "So phan tu: "; cin >> spt;
+  for(int i=0; i<spt; i++)
+    cout << a[i] << "\t";
+  cout << endl;
+}
