@@ -1,0 +1,15 @@
+void M1C::chenk(int k, int val) {
+    if (spt>=200) {
+        cout<<"Mang da day, khong the chen!";
+        return;
+    }
+    if (k<0||k>spt) {
+        cout<<"Vi tri chen khong hop le!";
+        return;
+    }
+    for (int i=spt; i>k; i--) {
+        a[i]=a[i-1];
+    }
+    a[k]=val; 
+    spt++;     
+}
